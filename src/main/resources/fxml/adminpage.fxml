@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1106.0" style="-fx-background-color: #c8e6c9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="125.0" prefWidth="1084.0">
+         <children>
+            <Label alignment="CENTER" layoutX="249.0" prefHeight="84.0" prefWidth="615.0" text="KITCHEN CLOVER">
+               <font>
+                  <Font name="Courier New Bold" size="51.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="377.0" layoutY="64.0" prefHeight="40.0" prefWidth="349.0" text="Serving Up Great Memories">
+               <font>
+                  <Font name="Papyrus" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView layoutX="43.0" layoutY="152.0" prefHeight="490.0" prefWidth="1026.0" style="-fx-background-color: #dcedc8;" AnchorPane.bottomAnchor="61.0" AnchorPane.topAnchor="152.0">
+         <columns>
+            <TableColumn prefWidth="137.6666717529297" style="-fx-background-color: #c5e1a5;" text="CLIENT ID" />
+            <TableColumn prefWidth="187.66665649414062" style="-fx-background-color: #c5e1a5;" text="NAME" />
+            <TableColumn prefWidth="188.33334350585938" style="-fx-background-color: #c5e1a5;" text="PRODUCT PACKAGE" />
+            <TableColumn prefWidth="171.0" style="-fx-background-color: #c5e1a5;" text="EMAIL" />
+            <TableColumn prefWidth="171.0" style="-fx-background-color: #c5e1a5;" text="AMOUNT" />
+            <TableColumn prefWidth="171.0" style="-fx-background-color: #c5e1a5;" text="STATUS" />
+         </columns>
+      </TableView>
+      <Button fx:id="tblViewOut" layoutX="524.0" layoutY="664.0" mnemonicParsing="false" onAction="#tblViewOut" style="-fx-background-color: lightgreen;" text="Log Out" />
+   </children>
+</AnchorPane>
