@@ -14,12 +14,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import org.springframework.stereotype.Controller;
 
 /**
  * FXML Controller class
  *
  * @author Miles
  */
+@Controller
 public class CateringController implements Initializable {
 
     @FXML

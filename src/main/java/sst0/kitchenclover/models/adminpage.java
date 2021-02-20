@@ -8,16 +8,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 
 @Entity
-@Table(name = "login")
+@Table(name = "adminP")
 public class adminpage {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name = "id", updatable = false, nullable = false)
-	private long id;
+	@Column(name = "client_id", updatable = false, nullable = false)
+	private long client_id;
 	
 	private int contact_num;
 	
@@ -25,38 +26,38 @@ public class adminpage {
 	
 	private int  price;
         
-          enum payment_status{
-              PAID, DOWNPAYMENT_FULFILLED, UNPAID;
-          }
-          
-          private LocalDate date;
-	
-	//private String gender;
-
-	
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public int getContactNum() {
-		return contact_num;
-	}
-
-	public void setContactNum(int contact_num) {
-		this.contact_num = contact_num;
-	}
-          
-          public int getRoomNum() {
-		return room_num;
-	}
-
-	public void setRoomNum(int room_num) {
-		this.room_num = room_num;
-	}
+//          enum payment_status{
+//              PAID, DOWNPAYMENT_FULFILLED, UNPAID;
+//          }
+//          
+//          private LocalDate date;
+//	
+//	//private String gender;
+//
+//	
+//	public long getId() {
+//		return id;
+//	}
+//
+//	public void setId(long id) {
+//		this.id = id;
+//	}
+//
+//	public int getContactNum() {
+//		return contact_num;
+//	}
+//
+//	public void setContactNum(int contact_num) {
+//		this.contact_num = contact_num;
+//	}
+//          
+//          public int getRoomNum() {
+//		return room_num;
+//	}
+//
+//	public void setRoomNum(int room_num) {
+//		this.room_num = room_num;
+//	}
           
 //          public String getPaymentStatus() {
 //		return payment_status;
@@ -66,13 +67,13 @@ public class adminpage {
 //		this.paymentStatus = paymentStatus;
 //	}
           
-          public int getPrice() {
-		return price;
-	}
-
-	public void setPrice(int price) {
-		this.price = price;
-	}
+//          public int getPrice() {
+//		return price;
+//	}
+//
+//	public void setPrice(int price) {
+//		this.price = price;
+//	}
 
 //	public class getPaymentStatus() {
 //		
@@ -82,15 +83,15 @@ public class adminpage {
 //		this.lastName = lastName;
 //	}
 	
-	public LocalDate getDate() {
-		return date;
-	}
-          
-          public void setDate(LocalDate date) {
-		this.date = date;
-	}
-
-	
+//	public LocalDate getDate() {
+//		return date;
+////	}
+////          
+//          public void setDate(LocalDate date) {
+//		this.date = date;
+//	}
+//
+//	
         
         
 	
@@ -103,10 +104,10 @@ public class adminpage {
 //	}
 //	
 
-	@Override
-	public String toString() {
-		return "Reservation [id=" + id + ", contact_num=" + contact_num + ", room_num=" + room_num + ", price=" + price +/* ", payment_status="+ //payment_status+*/ "]";
-	}
+//	@Override
+//	public String toString() {
+//		return "Reservation [id=" + id + ", contact_num=" + contact_num + ", room_num=" + room_num + ", price=" + price +/* ", payment_status="+ //payment_status+*/ "]";
+//	}
 
 
 

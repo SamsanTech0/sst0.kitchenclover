@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1106.0" style="-fx-background-color: #c8e6c9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="sceneTwo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1106.0" style="-fx-background-color: #c8e6c9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="125.0" prefWidth="1084.0">
          <children>
@@ -24,14 +24,14 @@
             </Label>
          </children>
       </Pane>
-      <TableView layoutX="43.0" layoutY="152.0" prefHeight="490.0" prefWidth="1026.0" style="-fx-background-color: #dcedc8;" AnchorPane.bottomAnchor="61.0" AnchorPane.topAnchor="152.0">
+      <TableView fx:id="adminTable" layoutX="43.0" layoutY="152.0" prefHeight="490.0" prefWidth="1026.0" style="-fx-background-color: #dcedc8;" AnchorPane.bottomAnchor="61.0" AnchorPane.topAnchor="152.0">
          <columns>
-            <TableColumn prefWidth="137.6666717529297" style="-fx-background-color: #c5e1a5;" text="CLIENT ID" />
-            <TableColumn prefWidth="187.66665649414062" style="-fx-background-color: #c5e1a5;" text="NAME" />
-            <TableColumn prefWidth="188.33334350585938" style="-fx-background-color: #c5e1a5;" text="PRODUCT PACKAGE" />
-            <TableColumn prefWidth="171.0" style="-fx-background-color: #c5e1a5;" text="EMAIL" />
-            <TableColumn prefWidth="171.0" style="-fx-background-color: #c5e1a5;" text="AMOUNT" />
-            <TableColumn prefWidth="171.0" style="-fx-background-color: #c5e1a5;" text="STATUS" />
+            <TableColumn fx:id="colId" prefWidth="137.6666717529297" style="-fx-background-color: #c5e1a5;" text="CLIENT ID" />
+            <TableColumn fx:id="colName" prefWidth="187.66665649414062" style="-fx-background-color: #c5e1a5;" text="NAME" />
+            <TableColumn fx:id="colPackage" prefWidth="188.33334350585938" style="-fx-background-color: #c5e1a5;" text="PRODUCT PACKAGE" />
+            <TableColumn fx:id="colEmail" prefWidth="171.0" style="-fx-background-color: #c5e1a5;" text="EMAIL" />
+            <TableColumn fx:id="colAmount" prefWidth="171.0" style="-fx-background-color: #c5e1a5;" text="AMOUNT (PHP)" />
+            <TableColumn fx:id="colStatus" prefWidth="171.0" style="-fx-background-color: #c5e1a5;" text="STATUS" />
          </columns>
       </TableView>
       <Button fx:id="tblViewOut" layoutX="524.0" layoutY="664.0" mnemonicParsing="false" onAction="#tblViewOut" style="-fx-background-color: lightgreen;" text="Log Out" />

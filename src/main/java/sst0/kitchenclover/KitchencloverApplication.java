@@ -9,7 +9,6 @@ import org.springframework.context.ConfigurableApplicationContext;
 import sst0.kitchenclover.config.StageManager;
 import sst0.kitchenclover.views.FxmlView;
 
-
 @SpringBootApplication
 public class KitchencloverApplication extends Application {
 
@@ -19,12 +18,12 @@ public class KitchencloverApplication extends Application {
     public static void main(final String[] args) {
         Application.launch(args);
     }
-    
+
     @Override
     public void init() throws Exception {
         springContext = springBootApplicationContext();
     }
-    
+
     @Override
     public void start(Stage stage) throws Exception {
         stageManager = springContext.getBean(StageManager.class, stage);

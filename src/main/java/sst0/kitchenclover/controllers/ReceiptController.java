@@ -10,12 +10,14 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import org.springframework.stereotype.Controller;
 
 /**
  * FXML Controller class
  *
  * @author Miles
  */
+@Controller
 public class ReceiptController implements Initializable {
 
     @FXML

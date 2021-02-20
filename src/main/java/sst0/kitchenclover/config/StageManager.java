@@ -12,6 +12,7 @@ import javafx.application.Platform;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
 public class StageManager {
@@ -32,9 +33,9 @@ public class StageManager {
 
     private void show(final Parent rootnode, String title) {
         Scene scene = prepareScene(rootnode);
-        //scene.getStylesheets().add("/styles/Styles.css");
+        scene.getStylesheets().add("/styles/Styles.css");
 
-        //primaryStage.initStyle(StageStyle.TRANSPARENT);
+        primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.setTitle(title);
         primaryStage.setScene(scene);
         primaryStage.sizeToScene();
