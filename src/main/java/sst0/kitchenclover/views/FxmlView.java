@@ -7,34 +7,56 @@ public enum FxmlView {
     LOGIN {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("login.title");
+            return getStringFromResourceBundle("Login.title");
         }
 
         @Override
         public String getFxmlFile() {
-            return "/fxml/login.fxml";
+            return "/fxml/Login.fxml";
         }
     },
     TABLE {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("adminpage.title");
+            return getStringFromResourceBundle("Adminpage.title");
         }
 
         @Override
         public String getFxmlFile() {
-            return "/fxml/adminpage.fxml";
+            return "/fxml/Adminpage.fxml";
         }
     },
     SERVICE {
         @Override
         public String getTitle() {
-            return getStringFromResourceBundle("service.title");
+            return getStringFromResourceBundle("Service.title");
         }
 
         @Override
         public String getFxmlFile() {
-            return "/fxml/service.fxml";
+            return "/fxml/Service.fxml";
+        }
+    },
+    AVAIL {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("Catering.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/fxml/Catering.fxml";
+        }
+    },
+    RECEIPT {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("Receipt.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/fxml/Receipt.fxml";
         }
     };
 

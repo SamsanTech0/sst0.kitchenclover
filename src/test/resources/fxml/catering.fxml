@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sst0.kitchenclover.controllers.CateringController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -34,10 +34,9 @@
             <Label layoutX="126.0" layoutY="228.0" text="Date of Event :" />
             <Label layoutX="126.0" layoutY="326.0" text="Total amount of guest :" />
             <TextField fx:id="guestCount" layoutX="259.0" layoutY="322.0" prefHeight="25.0" prefWidth="155.0" promptText="note children under 12" />
-            <Button fx:id="btnNext" layoutX="597.0" layoutY="354.0" mnemonicParsing="false" onAction="#btnNext" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #96b753;" text="Next" textFill="#fffdfd" />
-            <TextArea layoutX="472.0" layoutY="86.0" prefHeight="233.0" prefWidth="197.0" promptText="Anything should we know? " style="-fx-border-color: #96b753;" wrapText="true" />
+            <Button fx:id="ctrNext" layoutX="597.0" layoutY="354.0" mnemonicParsing="false" onAction="#ctrNext" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #96b753;" text="Next" textFill="#fffdfd" />
+            <TextArea layoutX="472.0" layoutY="86.0" prefHeight="233.0" prefWidth="197.0" promptText="Additional queries." style="-fx-border-color: #96b753;" wrapText="true" />
             <TextField fx:id="date" layoutX="268.0" layoutY="93.0" prefHeight="25.0" prefWidth="137.0" promptText="Date" />
-            <Button fx:id="btnCHome" layoutX="620.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnCHome" text="Home" />
          </children>
       </AnchorPane>
    </center>

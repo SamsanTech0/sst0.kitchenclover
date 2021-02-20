@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package sst0.kitchenclover.controllers;
-
+import sst0.kitchenclover.config.StageManager;
+import sst0.kitchenclover.views.FxmlView;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -14,15 +15,17 @@ import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Controller;
 
-/**
- * FXML Controller class
- *
- * @author Miles
- */
+
 @Controller
 public class CateringController implements Initializable {
+
+    @Lazy
+    @Autowired
+    private StageManager stageManager;
 
     @FXML
     private TextField clientName;
@@ -48,6 +51,8 @@ public class CateringController implements Initializable {
     private Button btnNext;
     @FXML
     private TextField date;
+    @FXML
+    private Button btnCHome;
 
     /**
      * Initializes the controller class.
@@ -55,7 +60,7 @@ public class CateringController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
     @FXML
     private void rbtnPickUp(ActionEvent event) {
@@ -74,7 +79,13 @@ public class CateringController implements Initializable {
     }
 
     @FXML
-    private void btnNext(ActionEvent event) {
+    void btnNext(ActionEvent event) {
+        stageManager.switchScene(FxmlView.SERVICE);
     }
-    
+
+    @FXML
+    void btnCHome(ActionEvent event) {
+        stageManager.switchScene(FxmlView.LOGIN);
+    }
+
 }

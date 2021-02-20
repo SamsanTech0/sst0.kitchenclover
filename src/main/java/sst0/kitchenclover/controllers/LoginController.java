@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -22,11 +23,11 @@ public class LoginController implements Initializable {
     @FXML
     private TextField loginUsn;
     @FXML
-    private TextField loginPass;
-    @FXML
     private Button btnAvail;
     @FXML
     private Button btnLogIn;
+    @FXML
+    private PasswordField loginPass;
 
     /**
      * Initializes the controller class.
@@ -37,12 +38,13 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    private void btnAvail(ActionEvent event) {
-        stageManager.switchScene(FxmlView.SERVICE);
+    void btnAvail(ActionEvent event) {
+        stageManager.switchScene(FxmlView.TABLE);
+
     }
 
     @FXML
-    private void btnLogIn(ActionEvent event) {
+    void btnLogIn(ActionEvent event) {
         stageManager.switchScene(FxmlView.TABLE);
 
     }
