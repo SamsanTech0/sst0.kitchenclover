@@ -4,7 +4,7 @@
 # Group 1 
 
  # adrian lapugot 
- # angelika cruz 
+ # angelika cruz (leader) 
  # michael angelo framil 
  # armando cientes 
  # charles edward domens 
