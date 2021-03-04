@@ -12,6 +12,9 @@ import org.springframework.context.annotation.Scope;
 
 import sst0.kitchenclover.logging.ExceptionWriter;
 
+/**
+ * @author Miles
+ */
 
 @Configuration
 public class AppJavaConfig {

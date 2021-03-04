@@ -1,19 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package sst0.kitchenclover.controllers;
 
-import sst0.kitchenclover.config.StageManager;
-import sst0.kitchenclover.views.FxmlView;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Controller;
+import sst0.kitchenclover.config.StageManager;
+import sst0.kitchenclover.views.FxmlView;
 
+/**
+ * FXML Controller class
+ *
+ * @author Miles
+ */
 @Controller
 public class LoginController implements Initializable {
 
@@ -21,13 +30,11 @@ public class LoginController implements Initializable {
     @Autowired
     private StageManager stageManager;
     @FXML
-    private TextField loginUsn;
-    @FXML
-    private Button btnAvail;
+    private TextField adminField;
     @FXML
     private Button btnLogIn;
     @FXML
-    private PasswordField loginPass;
+    private Button btnUser;
 
     /**
      * Initializes the controller class.
@@ -38,15 +45,13 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    void btnAvail(ActionEvent event) {
-        stageManager.switchScene(FxmlView.TABLE);
-
+    private void btnLogIn(ActionEvent event) {
+        stageManager.switchScene(FxmlView.CATERING);
     }
 
     @FXML
-    void btnLogIn(ActionEvent event) {
-        stageManager.switchScene(FxmlView.TABLE);
-
+    private void btnUser(ActionEvent event) {
+        stageManager.switchScene(FxmlView.ADMIN);
     }
 
 }

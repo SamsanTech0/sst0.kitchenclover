@@ -3,6 +3,10 @@ package sst0.kitchenclover.logging;
 import java.io.PrintWriter;
 import java.io.Writer;
 
+/**
+ *@author Miles
+ */
+
 public class ExceptionWriter extends PrintWriter {
 
     public ExceptionWriter(Writer writer) {
